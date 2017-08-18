@@ -1,0 +1,2 @@
+graft rice-bikes-flask/templates
+graft rice-bikes-flask/static

@@ -5,10 +5,11 @@ setup(
     packages=['rice_bikes_flask'],
     include_package_data=True,
     install_requires=[
+        'postgres',
         'Flask',
         'Flask-Restless',
-        'Flask-SQLAlchemy',
         'psycopg2',
         'SQLAlchemy',
+        'Flask-SQLAlchemy',
     ],
 )

@@ -1,5 +1,0 @@
-Flask
-Flask-Restless
-Flask-SQLAlchemy
-psycopg2
-SQLAlchemy

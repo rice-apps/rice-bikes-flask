@@ -1,3 +1,4 @@
 *.pyc
 alembic/versions/*
 venv/*
+*.egg-info

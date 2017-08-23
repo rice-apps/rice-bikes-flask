@@ -121,4 +121,6 @@ def add_cors_header(response):
 manager = flask_restless.APIManager(app, flask_sqlalchemy_db=db)
 manager.create_api(Transaction,
                    methods=['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'])
+manager.create_api(Customer,
+                   methods=['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'])
 app.after_request(add_cors_header)

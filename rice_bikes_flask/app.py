@@ -16,10 +16,10 @@ class User(db.Model):
     password = db.Column(db.String(80))
     email = db.Column(db.String(120), unique=True)
 
-    def __init__(self, username, password, email):
-        self.username = username
-        self.password = password
-        self.email = email
+    # def __init__(self, username, password, email):
+    #     self.username = username
+    #     self.password = password
+    #     self.email = email
 
     def __repr__(self):
         return '<User id: {} username: {}>'.format(self.id, self.username)
@@ -36,10 +36,10 @@ class Customer(db.Model):
     bikes = db.relationship('Bike',
                             backref='customer', lazy='dynamic')
 
-    def __init__(self, first_name, last_name, email):
-        self.first_name = first_name
-        self.last_name = last_name
-        self.email = email
+    # def __init__(self, first_name, last_name, email):
+    #     self.first_name = first_name
+    #     self.last_name = last_name
+    #     self.email = email
 
     def __repr__(self):
         return '<Customer id: {} first name: {} last name: {}>'.format(self.id,
